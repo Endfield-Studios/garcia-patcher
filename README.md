@@ -15,7 +15,7 @@ Patches the ALLfiring (v1.1.22) Android game package so it redirects network tra
 
 ## 2. Step by Step.
 
-### 3. Patch the Game.
+### 1. Patch the Game.
 
 Before we start, we should patch the game first to make sure that it should work later.
 
@@ -52,6 +52,7 @@ Before we edit this, you need to use your Local LAN Address for the `host` for t
 - Once you finished downloading MuMu Emulator 12, go to the Settings > About Phone > Build Number, and tap it 7 times until it prompts you that you have unlocked DEVELOPER MODE.
 - Go to System > Developer Option and enable **USD DEBUGGING**
 - Once that's done, close the emulator, we won't need it for now.
+- Open your Command Prompt and type this line, `adb connect 127.0.0.1:7555` or try `adb connect 127.0.0.1:16384` in case the other didn't work.
 
 Lastly, we need that LAN Address, open your **Command Prompt** and type `ipconfig` and look at your `IPv4 Address` and copy the address. Head back to the `config.toml` and replace the `"10.0.0.186"` with your LAN Address.
 > [!CAUTION]
@@ -61,3 +62,5 @@ Now, patch the game via this command.
 ```
 .\target\release\garcia-patcher.exe "C:\Users\[username]\Downloads\ALLfiring_1.1.22_APKPure.xapk"
 ```
+
+## 2. Android SDK
