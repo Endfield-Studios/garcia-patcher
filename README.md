@@ -35,15 +35,24 @@ Now that we have already build the cargo, there should be a new folder called `\
 
 After that wee need to modify `config.toml`, you can edit the config by right-click > Edit with Notepad or Notepad++. Inside, there should be a line of texts, for example:
 ```
-  [endpoints]
+[endpoints]
   host = "10.0.0.186"
   game_port = 8888
   sdk_port = 18889
   hotpatch_port = 18888
   
-  [tools]
+[tools]
   zipalign = "C:/Android/Sdk/build-tools/35.0.0/zipalign.exe"
   apksigner = "C:/Android/Sdk/build-tools/35.0.0/apksigner.bat"
   keytool = "C:/Program Files/Java/jdk-23/bin/keytool.exe"
   keystore = "garcia-local.p12"
 ```
+
+Before we edit this, you need to use your Local LAN Address for the `host` for the emulator and the server to recognize the game's connection.
+- Once you finished downloading MuMu Emulator 12, go to the Settings > About Phone > Build Number, and tap it 7 times until it prompts you that you have unlocked DEVELOPER MODE.
+- Go to System > Developer Option and enable **USD DEBUGGING**
+- Once that's done, close the emulator, we won't need it for now.
+
+Lastly, we need that LAN Address, open your **Command Prompt** and type `ipconfig` and look at your `IPv4 Address` and copy the address. Head back to the `config.toml` and replace the `"10.0.0.186"` with your LAN Address.
+> [!CAUTION]
+> Do not remove the " " as they are needed.
