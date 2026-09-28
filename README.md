@@ -30,3 +30,20 @@ Now build the [Garcia-Patcher], we need it to patch the apk.
 ```text
 cargo build --release
 ```
+
+Now that we have already build the cargo, there should be a new folder called `\target\release\` and inside that there should be a `garcia-patcher.exe`.
+
+After that wee need to modify `config.toml`, you can edit the config by right-click > Edit with Notepad or Notepad++. Inside, there should be a line of texts, for example:
+```
+  [endpoints]
+  host = "10.0.0.186"
+  game_port = 8888
+  sdk_port = 18889
+  hotpatch_port = 18888
+  
+  [tools]
+  zipalign = "C:/Android/Sdk/build-tools/35.0.0/zipalign.exe"
+  apksigner = "C:/Android/Sdk/build-tools/35.0.0/apksigner.bat"
+  keytool = "C:/Program Files/Java/jdk-23/bin/keytool.exe"
+  keystore = "garcia-local.p12"
+```
