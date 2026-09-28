@@ -20,5 +20,5 @@ Patches the ALLfiring (v1.1.22) Android game package so it redirects network tra
 Before we start, we should patch the game first to make sure that it should work later.
 
 - Download the [Allfiring | Version 1.1.22 APK](https://apkpure.com/allfiring/com.genmugame.prometheus/download).
-- Download the Zip file by pressing the green color `<> code` and select "Download Zip". Once it's finished, extract the files to the `C:\Users\[Username]\Documents\` or anywhere, make a new folder and rename it to whatever you want and extract all the files there.
+- Download the Zip file by pressing the green color `<> code` and select "Download Zip". Once it's finished, put the files to the `C:\Users\[Username]\Documents\` or anywhere, make a new folder and rename it to whatever you want and extract all the files there.
 - 
