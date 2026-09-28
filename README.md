@@ -1,14 +1,14 @@
 # Garcia Patcher
 
-Patches ALLfiring so it connects to a Garcia server instead of the official
-servers. It also restores the game's normal startup class, then aligns and
-signs every APK in the XAPK.
+Patches the ALLfiring (v1.1.22) Android game package so it redirects network traffic to a local or custom Garcia server. It restores the game's startup class and aligns and cryptographically signs every APK inside the .xapk archive.
 
-## Download
+## 1. Prerequisites
 
 [Download the latest APK](https://apkpure.com/allfiring/com.genmugame.prometheus/download)
 
-[Android Sdk](https://gist.github.com/gugadev/1a4e18b6f2fcd82332e3bac59c10738c)
+Download the latest [Android CMD-Line Tools](https://developer.android.com/studio?utm_source=gemini#command-tools)
+> [!CAUTION]
+> If the link above doesn't work, visit the [official website](https://developer.android.com/studio?utm_source=gemini#command-tools) and scroll down to the **Command Line Tools** section.
 
 ## Build
 
