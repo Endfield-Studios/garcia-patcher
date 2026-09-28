@@ -21,4 +21,9 @@ Before we start, we should patch the game first to make sure that it should work
 
 - Download the [Allfiring | Version 1.1.22 APK](https://apkpure.com/allfiring/com.genmugame.prometheus/download).
 - Download the Zip file by pressing the green color `<> code` and select "Download Zip". Once it's finished, put the files to the `C:\Users\[Username]\Documents\` or anywhere, make a new folder and rename it to whatever you want and extract all the files there.
-- 
+- Now, download and install [MuMu Player 12](https://www.mumuplayer.com), we need this to use the USB DEBUGGING via Developer Mode from the emulator.
+
+Now build the [Garcia-Patcher], we need it to patch the apk.
+> [!WARNING]
+> You need to download [RUST](https://rust-lang.org/tools/install/) Programming Language in order to use this command.
+```cargo build --release```
