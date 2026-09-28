@@ -55,4 +55,9 @@ Before we edit this, you need to use your Local LAN Address for the `host` for t
 
 Lastly, we need that LAN Address, open your **Command Prompt** and type `ipconfig` and look at your `IPv4 Address` and copy the address. Head back to the `config.toml` and replace the `"10.0.0.186"` with your LAN Address.
 > [!CAUTION]
-> Do not remove the " " as they are needed.
+> Do not remove the `" "` as they are needed.
+
+Now, patch the game via this command.
+```
+.\target\release\garcia-patcher.exe "C:\Users\[username]\Downloads\ALLfiring_1.1.22_APKPure.xapk"
+```
