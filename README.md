@@ -27,6 +27,6 @@ Now build the [Garcia-Patcher], we need it to patch the apk.
 > [!WARNING]
 > You need to download [RUST](https://rust-lang.org/tools/install/) Programming Language in order to use this command.
 
-```
+```text
 cargo build --release
 ```
